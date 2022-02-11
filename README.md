@@ -13,7 +13,8 @@ With that said, time to get to the updates.
 
 -----------------------------------------------------------------
 
-Version 0.01 - Added basic roles and role generator + instructions 
+Version 0.01-alpha - Added basic roles and role generator + instructions <br />
+---------------------------------------------------------------------------------------------------------------------------------------
 This is just a pre release! Download [here](https://github.com/planecarplanecar/among-us-with-command-prompt/releases/tag/v0.01-alpha)
 ---------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------
