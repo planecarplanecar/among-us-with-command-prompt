@@ -22,7 +22,6 @@ time.sleep(1)
 print("1...")
 time.sleep(1)
 
-Sabotages = ['LIGHTS HAVE BEEN SABOTAGED', 'REACTOR HAS BEEN SABOTAGED', 'COMMUNICATIONS ARE SABOTAGED', 'OXYGEN HAS BEEN SABOTAGED', 'SEIMSIC TREMORS HAVE BEEN SABOTAGED', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...']
 
 
 print("Type IMPOSTOR if you want to be an impostor :D. Otherwise, type CREWMATE.")
@@ -52,9 +51,10 @@ if role_input == ("CREWMATE"):
     print("Type TASK to do your tasks!")
     direction_input = input("")
     if direction_input == ("TASK"):
-
+        sabotages = ['LIGHTS HAVE BEEN SABOTAGED', 'REACTOR HAS BEEN SABOTAGED', 'COMMUNICATIONS ARE SABOTAGED', 'OXYGEN HAS BEEN SABOTAGED', 'SEIMSIC TREMORS HAVE BEEN SABOTAGED', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...']
+        print("Which task? FIX NAVS/MANIFOLDS/WIRES/ELECTRICITY/SCAN CARD")
         task_input = input("")
         if task_input == ("FIX NAVS"):
             print("Fixing navs...")
             time.sleep(3)
-            print(random.choice(Sabotages)) 
+            print(random.choice(sabotages)) 
