@@ -26,7 +26,7 @@ time.sleep(1)
 
 print("Type IMPOSTOR if you want to be an impostor :D. Otherwise, type CREWMATE.")
 role_input = input("")
-
+time.sleep(1)
 #Impostor Code
 if role_input == ("IMPOSTOR"):
     sabotage_input = input("")
@@ -52,12 +52,9 @@ if role_input == ("CREWMATE"):
     direction_input = input("")
     if direction_input == ("TASK"):
         sabotages = ['LIGHTS HAVE BEEN SABOTAGED', 'REACTOR HAS BEEN SABOTAGED', 'COMMUNICATIONS ARE SABOTAGED', 'OXYGEN HAS BEEN SABOTAGED', 'SEIMSIC TREMORS HAVE BEEN SABOTAGED', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...']
-        task_input = input("")
         print("Which task? FIX NAVS/MANIFOLDS/WIRES/ELECTRICITY/SCAN CARD")
+        task_input = input("")
         if task_input == ("FIX NAVS"):
             print("Fixing navs...")
             time.sleep(3)
             print(random.choice(sabotages)) 
-
-
-    
