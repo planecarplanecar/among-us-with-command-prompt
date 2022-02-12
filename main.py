@@ -21,18 +21,17 @@ print("2...")
 time.sleep(1)
 print("1...")
 time.sleep(1)
-#part 1 of 2 of the random role generator
-role = ['|Crewmate| do your tasks, and save the ship!', '|Impostor| prevent the crew from completing their tasks, and sabotage the ship!']
-time.sleep(3)
-print("You are a/an: ")
-time.sleep(1)
-#part two of the role generator
-print(random.choice(role)) 
-role2 = random.choice(role)
-if role2 == ("|Impostor| prevent the crew from completing their tasks, and sabotage the ship!"):
-    eliminate_input = input("")
+
+
+
+print("Type IMPOSTOR if you want to be an impostor :D. Otherwise, type CREWMATE.")
+role_input = input("")
+
+#Impostor Code
+if role_input == ("IMPOSTOR"):
+    sabotage_input = input("")
     print("Type SABOTAGE to sabotage the ship!")
-    if eliminate_input == ("SABOTAGE"):
+    if sabotage_input == ("SABOTAGE"):
         print("Which sabotage? (LIGHTS/REACTOR/COMMUNICATIONS/OXYGEN/SEISMIC TREMORS")
         sabotage_input = input("")
         if sabotage_input == ("LIGHTS"):
@@ -45,3 +44,20 @@ if role2 == ("|Impostor| prevent the crew from completing their tasks, and sabot
             print("OXYGEN IS SABOTAGED.")
         if sabotage_input == ("SEISMIC TREMORS"):
             print("SEISMIC TREMORS ARE SABOTAGED.")    
+
+#Crewmate Code
+
+if role_input == ("CREWMATE"):
+    print("Type TASK to do your tasks!")
+    direction_input = input("")
+    if direction_input == ("TASK"):
+        sabotages = ['LIGHTS HAVE BEEN SABOTAGED', 'REACTOR HAS BEEN SABOTAGED', 'COMMUNICATIONS ARE SABOTAGED', 'OXYGEN HAS BEEN SABOTAGED', 'SEIMSIC TREMORS HAVE BEEN SABOTAGED', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...', 'Nice! No sabotage. At least not yet...']
+        task_input = input("")
+        print("Which task? FIX NAVS/MANIFOLDS/WIRES/ELECTRICITY/SCAN CARD")
+        if task_input == ("FIX NAVS"):
+            print("Fixing navs...")
+            time.sleep(3)
+            print(random.choice(sabotages)) 
+
+
+    
